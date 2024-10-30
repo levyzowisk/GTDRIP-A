@@ -1,13 +1,12 @@
-import Busca from "../../components/Busca/index";
-import Layout from "../../components/Layout/App";
+import Footer from "../../components/Footer/App";
+import Header from "../../components/Header/App";
 
 export default function App() {
   return (
     <>
-    <Layout>
-      
-    </Layout>
-    <Busca></Busca>
+    <Header/>
+
+    <Footer/>
     </>
   );
 }
