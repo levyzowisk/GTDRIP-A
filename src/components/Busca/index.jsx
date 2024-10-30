@@ -1,25 +1,25 @@
-import React from 'react';
-import './style.css';
-import '../../../public/carrinho'
+import React from "react";
+import "./style.css";
+import carrinho from "../../../public/carrinho.png"
 
 function NavBar() {
   return (
-    <div className="navbar">
-      {/* Campo de busca */}
-      <input
-        type="text"
-        placeholder="Pesquisar produto..."
-        className="search-bar"
-      />
-      
-      {/* Botões de Cadastro e Entrar */}
-      <button className="button">Cadastrar-se</button>
-      <button className="button primary">Entrar</button>
-      
-      {/* Ícone do carrinho com contador */}
-      <button className='button'></button>
-    
+    <>
+      <div className="bar">
+        {/* Campo de busca */}
+        <input
+          type="text"
+          placeholder="Pesquisar produto..."
+          className="search-bar"
+        />
+
+        {/* Botões de Cadastro e Entrar */}
+        <button className="button">Cadastrar-se</button>
+        <button className="button primary">Entrar</button>
+
+        <img src={carrinho} alt=""/>
+      </div>
+    </>
   );
 }
-
-export default NavBar;
+export default NavBar

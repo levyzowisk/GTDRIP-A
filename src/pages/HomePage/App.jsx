@@ -1,4 +1,4 @@
-import Busca from "../../components/busca";
+import Busca from "../../components/Busca/index";
 import Layout from "../../components/Layout/App";
 
 export default function App() {
