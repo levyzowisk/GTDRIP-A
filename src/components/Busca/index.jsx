@@ -1,13 +1,25 @@
-import iconeBusca from "../../../public/Search.png"
-import "./style.css"
+import React from 'react';
+import './style.css';
+import '../../../public/carrinho'
 
-export default function Busca() {
-    return(
-       <div className="Pesquisa">
-
-            <input type="text" className="transparente"  placeholder="Pesquise produto..."/>
-            <button className="pesquisaIcons"><img src={iconeBusca} alt="" /></button>
-       </div>
-
-    );
+function NavBar() {
+  return (
+    <div className="navbar">
+      {/* Campo de busca */}
+      <input
+        type="text"
+        placeholder="Pesquisar produto..."
+        className="search-bar"
+      />
+      
+      {/* Botões de Cadastro e Entrar */}
+      <button className="button">Cadastrar-se</button>
+      <button className="button primary">Entrar</button>
+      
+      {/* Ícone do carrinho com contador */}
+      <button className='button'></button>
+    
+  );
 }
+
+export default NavBar;

@@ -1,25 +1,70 @@
+/* NavBar.css */
 
-.Pesquisa {
-    position: relative;
+.navbar {
     display: flex;
     align-items: center;
-    border-radius: 0.3rem;
-    width:559px;
-    height: 60px;
-    top: 34px;
-    left: 384px;
-
-}
-
-.transparente{
-    width: 100%;
-    padding-right: 40px;
-}
-
-.pesquisaIcons {
+    gap: 10px;
+  }
+  
+  .search-container {
+    position: relative;
+    width: 200px;
+  }
+  
+  .search-bar {
+    padding: 8px 35px 8px 10px; /* Espaçamento extra à direita para o ícone */
+    border: none;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    width: 40%;
+    outline: none;
+  }
+  
+  .search-bar::placeholder {
+    color: #999;
+  }
+  
+  /* Ícone de lupa */
+  .search-icon {
     position: absolute;
-    right: 10px; /* Ajuste conforme necessário */
-    background: transparent;
+    right: 10px; /* Alinhado à direita */
+    top: 30%;
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    color: #999; /* Cor do ícone */
+    font-size: 16px; /* Tamanho do ícone */
+  }
+  
+  .button {
+    padding: 0.5rem 1rem;
     border: none;
     cursor: pointer;
-}
+    text-decoration: underline;
+    font-size: 14px;
+    color: #333;
+    background-color: transparent;
+  }
+  
+  .primary {
+    background-color: #C92071;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .cart-icon {
+    position: relative;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color:#EE4266;
+    color: white;
+    border-radius: 30%;
+    padding: 2px 6px;
+    font-size: 12px;
+  }
+  
