@@ -1,0 +1,6 @@
+
+.productListing {
+    display: grid;
+    grid-template-columns: repeat(4,1); /* Limite de quatro colunas*/
+    gap: 16px; /* Ajusta os espaços entre itens*/
+}
