@@ -1,5 +1,7 @@
 /* NavBar.css */
-
+  .bar img {
+    height: 2rem;
+  }
 .navbar {
     display: flex;
     align-items: center;
@@ -12,14 +14,14 @@
   }
   
   .search-bar {
-    padding: 8px 35px 8px 10px; /* Espaçamento extra à direita para o ícone */
+    padding: 10px 40px 8px 10px; /* Espaçamento extra à direita para o ícone */
     border: none;
-    background-color: #f1f1f1;
-    border-radius: 20px;
+    background-color: #f3f0f0;
+    border-radius: 5px;
     width: 40%;
     outline: none;
   }
-  
+  /*  */
   .search-bar::placeholder {
     color: #999;
   }
@@ -35,7 +37,7 @@
   }
   
   .button {
-    padding: 0.5rem 1rem;
+    padding: 0.2rem 1rem;
     border: none;
     cursor: pointer;
     text-decoration: underline;
@@ -48,23 +50,29 @@
     background-color: #C92071;
     text-decoration: none;
     color: white;
-    border-radius: 5px;
+    border-radius: 8px;
   }
   
   .cart-icon {
     position: relative;
     font-size: 24px;
-    cursor: pointer;
   }
   
   .cart-count {
     position: absolute;
     top: -8px;
     right: -8px;
-    background-color:#EE4266;
+    background-color:#F5F5F5;
     color: white;
     border-radius: 30%;
     padding: 2px 6px;
     font-size: 12px;
   }
-  
+
+
+  .bar{
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+  }
+

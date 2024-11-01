@@ -1,11 +1,13 @@
 import React from "react";
 import "./style.css";
 import carrinho from "../../../public/carrinho.png"
+import Logo from "../Logo/App";
 
 function NavBar() {
   return (
     <>
       <div className="bar">
+        <Logo/>
         {/* Campo de busca */}
         <input
           type="text"

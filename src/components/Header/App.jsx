@@ -6,7 +6,7 @@ export default function Header () {
         <>
         <header>
             <Busca/>
-            <Logo />
+            {/* <Logo /> */}
             <h1>
                 ESSA PARTE É O HEADER E LOGO
             </h1>
