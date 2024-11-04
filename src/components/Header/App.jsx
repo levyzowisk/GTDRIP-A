@@ -1,12 +1,13 @@
 import Logo from "../Logo/App";
 import Busca from "../Busca/index"
+import "./style.css";
 
 export default function Header () {
     return (
         <>
         <header>
             <Busca/>
-            {/* <Logo /> */}
+              <Logo/>
             <h1>
                 ESSA PARTE É O HEADER E LOGO
             </h1>
