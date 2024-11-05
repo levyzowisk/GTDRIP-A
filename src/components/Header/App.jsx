@@ -1,14 +1,18 @@
-import Logo from "../Logo/App";
+import "./Header.css";
 
-export default function Header () {
+import headerlogo from "/svgs/logo-header.svg";
+
+export function Header() {
     return (
-        <>
-        <header>
-            <Logo />
-            <h1>
-                ESSA PARTE É O HEADER E LOGO
-            </h1>
-        </header>
-        </>
+    <header className="header-container">
+        <img src={headerlogo} alt="logo header" />
+
+    <div>
+        {/* <Link to={'/register'} > Cadastra-se </Link> */}
+    <button>
+        {/* <Link to={'/login'} > Entrar </Link> */}
+    </button>
+    </div>
+    </header>
     );
 }
