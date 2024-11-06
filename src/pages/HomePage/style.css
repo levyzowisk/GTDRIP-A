@@ -13,18 +13,15 @@ body {
   font-size: 16px;
 }
 
-main {
-  background-color: var(--cor-light-gray-3);
-}
 
 :root {
   /* Escala de cores coloridas */
-  --cor-01: #c92071;
-  --cor-02: #b5b6f2;
-  --cor-03: #991956;
+  --cor-primary: #c92071;
+  --cor-secondary: #b5b6f2;
+  --cor-tertiary: #991956;
   --cor-error: #ee4266;
   --cor-sucess: #52ca76;
-  --cor-atencao: #f6aa1c;
+  --cor-warning: #f6aa1c;
   /* Escala de cinza */
   --cor-dark-gray: #1f1f1f;
   --cor-dark-gray-2: #474747;
