@@ -1,11 +1,9 @@
 import React from "react";
 import "./style.css";
-import Gallery from "../Gallery/app";
 
 export default function Section({
   title = "Produtos em alta",
   link = { text: "Veja Mais →", href: "https://redirect.link" },
-  children,
 }) {
   return (
     <section className="section-container">

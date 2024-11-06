@@ -1,13 +1,14 @@
-// import Footer from "../Footer/App";
-// import Header from "../Header/App";
+import Footer from "../Footer/App";
+import Header from "../Header/App";
 
-// export default function Layout() {
-//   return (
-//     <>
-//       {/* Componente do cabeçalho */}
-//       <Header />
-//       {/* Componente do rodapé */}
-//       <Footer />
-//     </>
-//   );
-// }
+export default function Layout({ children }) {
+  return (
+    <>
+      {/* Componente do cabeçalho */}
+      <Header />
+      <main>{children}</main>
+      <Footer />
+      {/* Componente do rodapé */}
+    </>
+  );
+}

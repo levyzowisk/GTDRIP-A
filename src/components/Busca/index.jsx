@@ -1,13 +1,14 @@
 import React from "react";
-import "./style.css";
-import carrinho from "../../../public/carrinho.png"
+import carrinho from "../../assets/carrinho.png";
 import Logo from "../Logo/App";
 
-function NavBar() {
+import "./style.css";
+
+export default function NavBar() {
   return (
     <>
       <div className="bar">
-        <Logo/>
+        <Logo />
         {/* Campo de busca */}
         <input
           type="text"
@@ -19,9 +20,8 @@ function NavBar() {
         <button className="button">Cadastrar-se</button>
         <button className="button primary">Entrar</button>
 
-        <img src={carrinho} alt=""/>
+        <img src={carrinho} alt="" />
       </div>
     </>
   );
 }
-export default NavBar

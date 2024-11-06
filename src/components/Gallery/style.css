@@ -1,4 +1,4 @@
-@import "../../../main.css";
+
 
 /* CODIGO DO COMPONENTE - APENAS SLIDE */
 
@@ -109,7 +109,7 @@
 
 /* CODIGO DO COMPONENTE DO SLIDE COM thumbnail */
 
-.gallery {
+/* .gallery {
   position: relative;
 }
 
@@ -148,5 +148,110 @@
 }
 
 .thumbnail.active {
-  border-color: #007bff; /* Cor primary */
+  border-color: #007bff; 
+} */
+
+.gallery {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.gallery-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.gallery-button:first-of-type {
+  left: 10px;
+}
+
+.gallery-button:last-of-type {
+  right: 10px;
+}
+
+.dots {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #ff007f;
+}
+
+/* Cards de destaque */
+.cards-destaque {
+  text-align: center;
+  padding: 20px;
+}
+
+.cards-destaque h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.cards-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  width: 200px;
+  padding: 20px;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+.card-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #d1ff00;
+  color: #000;
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.card h3 {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.card button {
+  background-color: #ff007f;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
 }
