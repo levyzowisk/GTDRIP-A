@@ -17,8 +17,10 @@ export default function NavBar() {
         />
 
         {/* Botões de Cadastro e Entrar */}
-        <button className="button">Cadastrar-se</button>
-        <button className="button primary">Entrar</button>
+        <div>
+          <button className="button">Cadastrar-se</button>
+          <button className="button-primary">Entrar</button>
+        </div>
 
         <img src={carrinho} alt="" />
       </div>
