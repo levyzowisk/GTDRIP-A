@@ -1,7 +1,5 @@
 import ProductListing from "../../components/ProductListing/App";
 import img from "../../assets/tenis.png";
-import ProductListing from "../../components/ProductListing/App";
-import img from "../../assets/tenis.png";
 import FilterGroup from "../../components/FilterGroup/App";
 import Gallery from "../../components/Gallery/app";
 import Layout from "../../components/Layout/App";
@@ -20,12 +18,11 @@ const Product = {
 export default function HomePage() {
   return (
     <>
-      <ProductListing product={Product} />
-      <FilterGroup />
-
       <Layout>
         <Gallery></Gallery>
         <Section />
+        <ProductListing product={Product} />
+        <FilterGroup />
       </Layout>
     </>
   );
