@@ -7,7 +7,8 @@ export default function App() {
   return (
     <>
       <Layout>
-        <Gallery />
+        <Gallery>
+        </Gallery>
         <Section />
       </Layout>
     </>
