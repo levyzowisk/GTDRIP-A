@@ -1,5 +1,7 @@
 import ProductListing from "../../components/ProductListing/App";
 import img from "../../assets/tenis.png";
+import ProductListing from "../../components/ProductListing/App";
+import img from "../../assets/tenis.png";
 import FilterGroup from "../../components/FilterGroup/App";
 import Gallery from "../../components/Gallery/app";
 import Layout from "../../components/Layout/App";
@@ -15,7 +17,7 @@ const Product = {
   precodesconto: "$100",
 };
 
-function HomePage() {
+export default function HomePage() {
   return (
     <>
       <ProductListing product={Product} />
@@ -28,5 +30,3 @@ function HomePage() {
     </>
   );
 }
-
-export default HomePage;
