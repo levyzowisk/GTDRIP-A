@@ -229,6 +229,8 @@
 // }
 
 import React, { useState } from "react";
+import PropTypes from 'prop-types'; 
+
 import fundo from "../../assets/gallery.png";
 import imgA from "../../assets/home-images/home-slide-1.jpeg";
 import imgB from "../../assets/home-images/home-slide-2.jpeg";
@@ -324,3 +326,8 @@ export default function Gallery({ radius = "4px" }) {
     </>
   );
 }
+
+
+Gallery.propTypes = {
+  radius: PropTypes.string, // Valida que radius é uma string
+};

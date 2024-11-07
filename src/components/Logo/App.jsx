@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import logoHeader from "../../assets/svgs/logo-header.svg";
 import "./style.css";
 
