@@ -10,8 +10,11 @@
 }
 
 .section-title {
-  color: var(--cor-dark-gray-2);
   font-size: 24px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 3.45%;
+  color: var(--cor-dark-gray-2)
 }
 
 .section-link {

@@ -299,24 +299,34 @@ export default function Gallery({ radius = "4px" }) {
         <div className="cards-container">
           <div className="card" style={{ backgroundImage: `url(${cardImg1})` }}>
             <div className="card-tag">30% OFF</div>
-            <h3>Novo drop Supreme</h3>
             <button>Comprar</button>
           </div>
           <div className="card" style={{ backgroundImage: `url(${cardImg2})` }}>
             <div className="card-tag">30% OFF</div>
-            <h3>Coleção Adidas</h3>
             <button>Comprar</button>
           </div>
           <div className="card" style={{ backgroundImage: `url(${cardImg3})` }}>
             <div className="card-tag">30% OFF</div>
-            <h3>Novo Beats Bass</h3>
             <button>Comprar</button>
           </div>
+        </div>
+      </div>
+
+      {/* COLEÇÃO EM DESTAQUE 2 */}
+      <div className="cards-destaque2">
+        <h2>Coleções em destaque</h2>
+        <div className="cards-container2">
+          <div className="card2"></div>
+          <div className="card2"></div>
+          <div className="card2"></div>
+          <div className="card2"></div>
+          <div className="card2"></div>
         </div>
       </div>
     </>
   );
 }
+
 
 Gallery.propTypes = {
   radius: PropTypes.string, // Valida que radius é uma string

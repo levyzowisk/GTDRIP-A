@@ -18,7 +18,7 @@ export default function NavBar() {
 
         {/* Botões de Cadastro e Entrar */}
         <div>
-          <button className="button">Cadastrar-se</button>
+          <button className="cadastro">Cadastrar-se</button>
           <button className="button-primary">Entrar</button>
         </div>
 

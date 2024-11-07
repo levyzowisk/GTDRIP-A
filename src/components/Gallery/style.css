@@ -1,8 +1,6 @@
-
-
 /* CODIGO DO COMPONENTE - APENAS SLIDE */
 
-  /* * {
+/* * {
   margin: 0;
   padding: 0;
 }
@@ -57,9 +55,7 @@
   opacity: 1;
 } */
 
-
 /* CODIGO DO COMPONENTE SLIDE COM BOLINHAS */
-
 
 /* .gallery {
   position: relative;
@@ -182,7 +178,7 @@
 
 .dots {
   position: absolute;
-  bottom: 10px;
+  bottom: 40px;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -203,13 +199,17 @@
 
 /* Cards de destaque */
 .cards-destaque {
-  text-align: center;
-  padding: 20px;
+  /* text-align: center; */
+  /* padding: 20px; */
+  margin-left: 3.45%;
 }
 
 .cards-destaque h2 {
   font-size: 24px;
   margin-bottom: 20px;
+  margin-top: 20px;
+  /* text-align: center; */
+  color: var(--cor-dark-gray-2);
 }
 
 .cards-container {
@@ -219,14 +219,14 @@
 }
 
 .card {
-  width: 200px;
+  width: 100%;
   padding: 20px;
   color: white;
   background-size: cover;
   background-position: center;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  /* text-align: center; */
   position: relative;
 }
 
@@ -247,11 +247,39 @@
 }
 
 .card button {
-  background-color: #ff007f;
-  color: white;
+  background-color: var(--cor-white);
+  color: var(--cor-primary);
   padding: 10px 15px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 14px;
+}
+
+/* COLEÇÃO DESTAQUE 2 */
+
+.card2 {
+
+}
+
+.card-tech2 {
+
+}
+
+.cards-destaque2 {
+  /* text-align: center; */
+  /* padding: 20px; */
+  margin-left: 3.45%;
+}
+
+.cards-destaque2 h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: var(--cor-dark-gray-2);
+}
+
+.cards-container2 {
+  display: flex;
+  gap: 20px;
 }
