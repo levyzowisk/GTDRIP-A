@@ -1,17 +1,10 @@
-.product-list {
+
+.productListing {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
+    grid-template-columns: repeat(4, 1fr); /* Limite de quatro colunas*/
+    gap: 16px
+}   
 
-.product-item {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-}
-
-.product-item img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
+.article {
+    border: 1px solid #ccc;
 }

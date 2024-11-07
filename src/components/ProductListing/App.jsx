@@ -1,87 +1,42 @@
-// const products = [
-//   {
-//     name: "Nome do produto 1",
-//     image: "https://url.imagem/do/produto1.png",
-//     price: 200,
-//     priceDiscount: 149.9,
-//   },
+import './style.css';
+import ProductCard from '../../components/ProductCard/App'
+import img from "../../assets/tenis.png"
 
-//   {
-//     name: "Nome do produto 1",
-//     image: "https://url.imagem/do/produto1.png",
-//     price: 49.9,
-//   },
-// ];
+const Product = {
 
-// import React from "react";
-const products = [
-  {
-    name: "Nome do produto 1",
-    image: "../../assets/product-images/produc-image-1.jpeg",
-    price: 200,
-    priceDiscount: 149.9,
-  },
-  {
-    name: "Nome do produto 2",
-    image: "../../assets/product-images/produc-image-2.jpeg",
-    price: 200,
-    priceDiscount: 49.9,
-  },
-  {
-    name: "Nome do produto 3",
-    image: "../../assets/product-images/produc-image-3.jpeg",
-    price: 200,
-    priceDiscount: 149.9,
-  },
-  {
-    name: "Nome do produto 4",
-    image: "../../assets/product-images/produc-image-4.jpeg",
-    price: 200,
-    priceDiscount: 49.9,
-  },
-  {
-    name: "Nome do produto 5",
-    image: "../../assets/product-images/produc-image-5.jpeg",
-    price: 200,
-    priceDiscount: 149.9,
-  },
-  {
-    name: "Nome do produto 6",
-    image: "../../assets/product-images/produc-image-1.jpeg",
-    price: 200,
-    priceDiscount: 49.9,
-  },
-  {
-    name: "Nome do produto 7",
-    image: "../../assets/product-images/produc-image-2.jpeg",
-    price: 200,
-    priceDiscount: 149.9,
-  },
-  {
-    name: "Nome do produto 8",
-    image: "../../assets/product-images/produc-image-3.jpeg",
-    price: 200,
-    priceDiscount: 49.9,
-  },
-];
+   img: img,
+  descontooff:"30% OFF",
+  title:"Tênis",
+  nomeproduto:"K-Swiss V8 - Masculino",
+  preco:"$200",
+  precodesconto:"$100",
 
-// Componente que exibe a lista de produtos
-export function ProductListing() {
-  return (
-    <div>
-      <h1>Produtos</h1>
-      <div className="product-list">
-        {products.map((product, index) => (
-          <div key={index} className="product-item">
-            <img src={product.image} alt={product.name} />
-            <h2>{product.name}</h2>
-            <p>Preço: R${product.price}</p>
-            <p>Preço com desconto: R${product.priceDiscount}</p>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
+
+}
+
+
+
+
+
+function ProductListing (props) {
+    return (
+        <>
+            <div className="productListing">
+                {[...Array(8)].map((g,index) => (
+                   <ProductCard 
+                   key= {index}
+                   img= {props.product.img}
+                  descontooff={props.product.descontooff}
+                  title={props.product.title}
+                  nomeProduto={props.product.nomeproduto}
+                  preco={props.product.preco}
+                  precoDesconto={props.product.precodesconto}
+                 />
+                ))}
+            </div>
+    
+        </>
+    );
 }
 
 export default ProductListing;
