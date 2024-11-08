@@ -1,10 +1,11 @@
-
 .productListing {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Limite de quatro colunas*/
-    gap: 16px
-}   
+    grid-template-columns: repeat(4, 1fr); /* Limite de quatro colunas */
+    gap: 16px; /* Adicionado ponto e vírgula no final */
+    margin-left: 3.45%;
+}
 
 .article {
-    border: 1px solid #ccc;
+    padding: 16px; /* Adicionado padding para melhorar o espaçamento interno */
+    border-radius: 4px; /* Adicionado border-radius para cantos arredondados */
 }

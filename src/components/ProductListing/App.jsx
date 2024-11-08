@@ -2,7 +2,7 @@ import "./style.css";
 import ProductCard from "../../components/ProductCard/App";
 import img from "../../assets/tenis.png";
 
-const Product = {
+const product = {
   img: img,
   descontooff: "30% OFF",
   title: "Tênis",
@@ -11,24 +11,20 @@ const Product = {
   precodesconto: "$100",
 };
 
-function ProductListing(props) {
+export default function ProductListing() {
   return (
-    <>
-      <div className="productListing">
-        {[...Array(8)].map((g, index) => (
-          <ProductCard
-            key={index}
-            img={props.product.img}
-            descontooff={props.product.descontooff}
-            title={props.product.title}
-            nomeProduto={props.product.nomeproduto}
-            preco={props.product.preco}
-            precoDesconto={props.product.precodesconto}
-          />
-        ))}
-      </div>
-    </>
+    <div className="productListing">
+      {[...Array(8)].map((_, index) => (
+        <ProductCard
+          key={index}
+          img={product.img}
+          descontooff={product.descontooff}
+          title={product.title}
+          nomeProduto={product.nomeproduto}
+          preco={product.preco}
+          precoDesconto={product.precodesconto}
+        />
+      ))}
+    </div>
   );
 }
-
-export default ProductListing;

@@ -6,14 +6,6 @@ import Layout from "../../components/Layout/App";
 import Section from "../../components/Section/App";
 import "./style.css";
 
-const Product = {
-  img: img,
-  descontooff: "30% OFF",
-  title: "Tênis",
-  nomeproduto: "K-Swiss V8 - Masculino",
-  preco: "$200",
-  precodesconto: "$100",
-};
 
 export default function HomePage() {
   return (
@@ -21,8 +13,8 @@ export default function HomePage() {
       <Layout>
         <Gallery></Gallery>
         <Section />
-        <ProductListing product={Product} />
-        <FilterGroup />
+        <ProductListing/>
+        {/* <FilterGroup /> */}
       </Layout>
     </>
   );
