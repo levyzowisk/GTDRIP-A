@@ -1,128 +1,108 @@
-.buy-box-container {
-    align-self: flex-start;
+.buy-box {
+  display: flex;
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 
-.buy-box-container > .buy-box-header {
-    max-width: 440px;
+.product-details {
+  width: 300px;
+  font-family: Arial, sans-serif;
 }
 
-.buy-box-container > .buy-box-header > h1 {
-    font-size: 32px;
-    font-weight: 800;
-    color: var(--dark-gray);
+.product-title {
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
-.buy-box-container > .buy-box-header > h2 {
-    font-size: 12px;
-    font-weight: 500;
-    margin: 10px 0;
-    color: var(--dark-gray-3);
+.product-category {
+  color: #777;
+  font-size: 0.9em;
 }
 
-.buy-box-container > .buy-box-header > section {
-    display: flex;
-    gap: 10px;
-    align-items: center;
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
 }
 
-.buy-box-container > .buy-box-header > section > span:nth-child(2) {
-    background-color: var(--warning);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    padding: 0px 25px;
-    border-radius: 7px;
-    color: white;
-    font-weight: 700;
+.rating-value {
+  font-weight: bold;
+  color: #f9a825;
 }
 
-.buy-box-container > .buy-box-header > section > span:nth-child(2) img {
-    height: max-content;
-}
-.buy-box-container > .buy-box-header > section > span:nth-child(2) p {
-    position: relative;
-    top: 9px;
+.review-count {
+  color: #888;
 }
 
-.buy-box-container > .buy-box-header > section > span:last-child {
-    color: var(--light-gray);
-    font-weight: 500;
-    font-size: 14px;
+.price {
+  margin-top: 10px;
 }
 
-.buy-box-container > .buy-box-main {
-    margin: 20px 0;
+.current-price {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #333;
 }
 
-.buy-box-container > .buy-box-main > h3 {
-    font-weight: 700;
-    color: var(--light-gray) !important;
+.original-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-left: 10px;
 }
 
-.buy-box-container > .buy-box-main > p:first-child {
-    width: max-content;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.product-description {
+  margin-top: 10px;
+  color: #666;
 }
 
-.buy-box-container > .buy-box-main > p:first-child > span:first-child {
-    color: var(--dark-gray-2);
-    font-size: 32px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-weight: 700;
+.size-selection,
+.color-selection {
+  margin-top: 15px;
 }
 
-.buy-box-container > .buy-box-main > p:last-child {
-    max-width: 500px;
-    color: var(--dark-gray-2);
+.size-options,
+.color-options {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
 }
 
-.buy-box-container > .buy-box-main > p:first-child > span:first-child > div {
-    font-size: 16px;
-    position: relative;
-    bottom: -5px;
-    font-weight: 500;
+.size-option {
+  border: 1px solid #070707;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
-.buy-box-container > .buy-box-main > p:first-child > span:last-child {
-    font-size: 16px;
-    position: relative;
-    bottom: -3px;
-    font-weight: 400;
-    text-decoration: line-through;
-    color: var(--light-gray-2);
+.size-option:hover {
+  border-color: #ede5e5;
 }
 
-.buy-box-container > .buy-box-main > h3 {
-    color: var(--dark-gray-2);
-    font-size: 14px;
-    margin-top: 20px;
-    margin-bottom: 5px;
+.color-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
 }
 
-.buy-box-container > .buy-box-main > p:last-child {
-    font-size: 14px;
-    color: var(--dark-gray-2);
-    font-weight: 500;
+.buy-button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background-color: #ffa726;
+  color: #fdf8f8;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
 }
 
-.buy-box-footer > button {
-    color: white;
-    background-color: var(--warning);
-    border: none;
-    padding: 10px 80px;
-    font-weight: 700;
-    font-size: 16px;
-    text-transform: uppercase;
-    margin-top: 40px;
-    border-radius: 7px;
-    transition: all 0.3s ease;
-}
-
-.buy-box-footer > button:hover {
-    background-color: #cf8900;
+.buy-button:hover {
+  background-color: #fb8c00;
 }

@@ -1,54 +1,70 @@
-import "./BuyBox.css";
+import React from "react";
+import Gallery from "../Gallery/app2";
+import "./style.css";
 
-// import { ProductOptions } from "./../ProductOptions/ProductOptions";
+export default function BuyBox() {
+  return (
+    <div className="buy-box">
+      <Gallery width="700px" height="570px" radius="4px" />
 
-import StarActive from "../../assets/svgs/star.active.svg";
-import StarDesactive from "../../assets/svgs/star.desactive.svg";
-import StarWhite from "../../assets/svgs/star.white.svg";
-    
-export function BuyBox() {
+      <div className="product-details">
+        <h2 className="product-title">
+          Tênis Nike Revolution 6 Next Nature Masculino
+        </h2>
+        <p className="product-category">Casual | Nike | REF:3846171</p>
 
-    return (
-        <div className="buy-box-container">
-            <header className="buy-box-header">
-                <h1>Tenis Nike Revolution 6 Next Nature Masculino</h1>
-                <h2>Casual | Nike | REF:123</h2>
-                <section>
-                    <span>
-                        <img src={StarActive} />
-                        <img src={StarActive} />
-                        <img src={StarActive} />
-                        <img src={StarActive} />
-                        <img src={StarDesactive} />
-                    </span>
-
-                    <span>
-                        <p>4.7</p>
-                        <img src={StarWhite} />
-                    </span>
-
-                    <span>(90 avaliações)</span>
-                </section>
-            </header>
-
-            <main className="buy-box-main">
-                <p>
-                    <span>
-                        <div>R$</div>219,00
-                    </span>
-                    <span>219,00</span>
-                </p>
-
-                <h3>Descrição do produto</h3>
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-                </p>
-            </main>
-
-            <footer className="buy-box-footer">
-                {/* <ProductOptions /> */}
-                <button>Comprar</button>
-            </footer>
+        <div className="rating">
+          <span className="stars">⭐⭐⭐⭐</span>
+          <span className="rating-value">4.7</span>
+          <span className="review-count">(90 avaliações)</span>
         </div>
-    );
+
+        <div className="price">
+          <span className="current-price">R$ 219,00</span>
+          <span className="original-price">R$ 299,00</span>
+        </div>
+
+        <p className="product-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco.
+        </p>
+
+        <div className="size-selection">
+          <h4>Tamanho</h4>
+          <div className="size-options">
+            {["39", "40", "41", "42", "43"].map((size) => (
+              <button key={size} className="size-option">
+                {size}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="color-selection">
+          <h4>Cor</h4>
+          <div className="color-options">
+            <span
+              className="color-circle"
+              style={{ backgroundColor: "#00c3ff" }}
+            ></span>
+            <span
+              className="color-circle"
+              style={{ backgroundColor: "#ff5c5c" }}
+            ></span>
+            <span
+              className="color-circle"
+              style={{ backgroundColor: "#555" }}
+            ></span>
+            <span
+              className="color-circle"
+              style={{ backgroundColor: "#8a57f2" }}
+            ></span>
+          </div>
+        </div>
+
+        <button className="buy-button">COMPRAR</button>
+      </div>
+    </div>
+  );
 }

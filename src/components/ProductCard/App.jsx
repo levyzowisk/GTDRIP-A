@@ -1,29 +1,33 @@
-import "./style.css"
-export default function ProductCard (props){
-    return (
+import "./style.css";
 
-        <>
-
-       <article className="article">
-            <figure className="containerImg">
-                <img src={props.img} />
-                <div className="off">
-                <p>{props.descontooff}</p>
-                    </div> 
-            </figure>
-        
-             <section className="sectionCard">
-                     <h4>{props.title}</h4>
-                     <h5>{props.nomeProduto}</h5>
-                     <div className="priceCard">
-                        <p className="preco">{props.preco}</p>
-                        <p className="precoDesconto">{props.precoDesconto}</p>
-                     </div>
-             </section>
-
-       </article>
+export default function ProductCard({
+  img,
+  descontooff,
+  title,
+  nomeProduto,
+  preco,
+  precoDesconto,
+}) {
+  return (
+    <>
+      <article className="article">
+        <figure className="containerImg">
+          <img src={img} alt={nomeProduto} />
+          {descontooff && (
+            <div className="off">
+              <p>{descontooff}</p>
+            </div>
+          )}
+        </figure>
+        <section className="sectionCard">
+          <h4>{title}</h4>
+          <h5>{nomeProduto}</h5>
+          <div className="priceCard">
+            <p className="preco">{preco}</p>
+            {precoDesconto && <p className="precoDesconto">{precoDesconto}</p>}
+          </div>
+        </section>
+      </article>
     </>
-
-    )
-         
+  );
 }
