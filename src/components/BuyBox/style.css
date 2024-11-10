@@ -11,8 +11,8 @@
 }
 
 .product-details {
-  width: 300px;
   font-family: Arial, sans-serif;
+  right: 100%;
 }
 
 .product-title {

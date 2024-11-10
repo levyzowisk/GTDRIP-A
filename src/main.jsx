@@ -29,7 +29,7 @@ createRoot(document.getElementById("root")).render(
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/products" element={<ProductListingPage />} />
-        <Route path="/product/:id" element={<ProductViewPage />} />
+        <Route path="/products/:id" element={<ProductViewPage />} />
       </Routes>
     </Router>
   </StrictMode>

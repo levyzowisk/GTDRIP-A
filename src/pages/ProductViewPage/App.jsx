@@ -10,7 +10,11 @@ export default function ProductViewPage() {
   return (
     <>
       <Layout>
-        <BuyBox></BuyBox>
+        <Gallery></Gallery>
+        <BuyBox/>
+        <Section>
+          <ProductListing></ProductListing>
+        </Section>
       </Layout>
     </>
   );
