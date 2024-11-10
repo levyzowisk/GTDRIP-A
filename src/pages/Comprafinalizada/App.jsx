@@ -5,7 +5,7 @@ import Section from "../../components/Section/App";
 import "./style.css";
 
 
-export default function HomePage() {
+export default function Comprafinalizada() {
   return (
     <>
       <Layout>

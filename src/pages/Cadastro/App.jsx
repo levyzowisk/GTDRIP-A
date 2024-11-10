@@ -5,13 +5,10 @@ import Section from "../../components/Section/App";
 import "./style.css";
 
 
-export default function HomePage() {
+export default function Cadastro() {
   return (
     <>
       <Layout>
-        <Gallery></Gallery>
-        <Section/>
-        <ProductListing/>
       </Layout>
     </>
   );
