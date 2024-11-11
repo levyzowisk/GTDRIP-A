@@ -37,7 +37,6 @@
 }
 
 .sectionCard h4 {
-  /* padding: 0.5rem; */
   font-family: "Inter", sans-serif;
   font-size: 15px;
   font-weight: 700;
@@ -61,7 +60,6 @@
 }
 
 .preco {
-  /* margin-right: 16px; */
   text-decoration: line-through;
   font-family: "Inter", sans-serif;
   font-size: 22px;
@@ -79,3 +77,71 @@
 .sectionCard p {
   font-family: "Inter", sans-serif;
 }
+
+
+/* 
+.article {
+  display: flex;
+  flex-direction: column;
+  width: 292px;
+  margin-bottom: 1rem;
+}
+
+.containerImg {
+  width: 292px;
+  height: 321px;
+  margin-bottom: 1rem;
+}
+
+.containerImg img {
+  width: inherit;
+  height: inherit;
+  box-shadow: 1px 1px 15px 1px #00000021;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.off {
+  position: absolute;
+  top: 16px;
+  left: 13px;
+  color: #474747;
+  background-color: #e7ff86;
+  border-radius: 8px;
+  width: 6.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionCard h5 {
+  color: #474747;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  margin-bottom: 1rem;
+}
+
+.priceCard {
+  display: flex;
+  gap: 1rem;
+}
+
+.preco {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  color: #474747;
+}
+
+.preco.risco {
+  color: #b0b0b0;
+  text-decoration: line-through;
+}
+
+.precoDesconto {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  color: #000000;
+} */

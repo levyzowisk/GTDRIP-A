@@ -31,37 +31,35 @@
 
 //
 
-import { Link, useLocation } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Busca from "../Busca/index";
 import "./style.css";
 
 export default function Header() {
-  const location = useLocation(); // Obtém o caminho atual
-
   return (
     <header>
       <Busca />
       <nav className="nav">
         <ul>
           <li>
-            <Link to="/" className={location.pathname === "/" ? "active" : ""}>
+            <NavLink to="/" activeClassName="active">
               Home
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/produtos" className={location.pathname === "/produtos" ? "active" : ""}>
+            <NavLink to="/products" activeClassName="active">
               Produtos
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/categorias" className={location.pathname === "/categorias" ? "active" : ""}>
+            <NavLink to="/categorias" activeClassName="active">
               Categorias
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/pedidos" className={location.pathname === "/pedidos" ? "active" : ""}>
+            <NavLink to="/meuspedidos" activeClassName="active">
               Meus Pedidos
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>

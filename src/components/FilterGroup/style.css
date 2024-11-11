@@ -61,4 +61,41 @@
      align-items: center; */
 } 
 
-    
+
+/* .filterGroup {
+    width: 308px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.title, .filterOption h3 {
+    font-size: 16px;
+    color: #474747;
+    margin-bottom: 20px;
+}
+
+.filterGroup hr {
+    border: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.filterGroup ul {
+    list-style: none;
+    padding: 0;
+}
+
+.filterGroup li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.filterGroup input[type="checkbox"],
+.filterGroup input[type="radio"] {
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+    accent-color: #C92071;
+}
+ */

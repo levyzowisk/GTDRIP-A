@@ -1,22 +1,23 @@
 import React from "react";
-import ProductCard from "../ProductCard/App";
 import "./style.css";
 
 export default function Section({
   title = "Produtos em alta",
-  link = { text: "Veja Mais →", href: "https://redirect.link" },
-  children = { ProductCard }}) {
+  titleAlign = "left",
+  link = { text: "Veja Mais →", href: "/products" },
+  children
+}) {
   return (
     <section className="section-container">
-      <div className="section-header">
+      <div className="section-header" style={{ textAlign: titleAlign }}>
         <h2 className="section-title">{title}</h2>
-        <a href={link.href} className="section-link">
-          {link.text}
-        </a>
+        {link && (
+          <a href={link.href} className="section-link">
+            {link.text}
+          </a>
+        )}
       </div>
-      <div>
-        <ProductCard />
-      </div>
+      <div className="section-content">{children}</div>
     </section>
   );
 }

@@ -4,7 +4,7 @@ import Logo from "../Logo/App";
 
 import "./style.css";
 
-export default function NavBar() {
+export default function Busca() {
   return (
     <>
       <div className="bar">
@@ -17,9 +17,13 @@ export default function NavBar() {
         />
 
         {/* Botões de Cadastro e Entrar */}
-        <div>
-          <button className="cadastro">Cadastrar-se</button>
-          <button className="button-primary">Entrar</button>
+        <div className="auth-links">
+          <a href="/cadastro" className="cadastro">
+            Cadastre-se
+          </a>
+          <a href="/acessarconta" className="button-primary">
+            Entrar
+          </a>
         </div>
 
         <img src={carrinho} alt="" />

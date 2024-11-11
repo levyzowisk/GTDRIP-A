@@ -45,6 +45,13 @@ import HomePage from "./pages/HomePage/App.jsx";
 import ProductListingPage from "./pages/ProductListingPage/App.jsx";
 import ProductViewPage from "./pages/ProductViewPage/App.jsx";
 import NotFoundPage from "./components/NotFoundPage/App.jsx";
+import Acessarconta from "./pages/Acessarconta/App.jsx";
+import Cadastro from "./pages/Cadastro/App.jsx";
+import Carrinho from "./pages/Carrinho/App.jsx";
+import Comprafinalizada from "./pages/Comprafinalizada/App.jsx";
+import Criarconta from "./pages/Criarconta/App.jsx";
+import Finalizarcompra from "./pages/Finalizarcompra/App.jsx";
+import Meuspedidos from "./pages/Meuspedidos/App.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -53,6 +60,13 @@ createRoot(document.getElementById("root")).render(
         <Route path="/" element={<HomePage />} />
         <Route path="/products" element={<ProductListingPage />} />
         <Route path="/products/:id" element={<ProductViewPage />} />
+        <Route path="/acessarconta" element={<Acessarconta/>} />
+        <Route path="/cadastro" element={<Cadastro/>} />
+        <Route path="/carrinho" element={<Carrinho />} />
+        <Route path="/comprafinalizada" element={<Comprafinalizada />} />
+        <Route path="/criarconta" element={<Criarconta />} />
+        <Route path="/finalizarcompra" element={<Finalizarcompra />} />
+        <Route path="/meuspedidos" element={<Meuspedidos />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Router>

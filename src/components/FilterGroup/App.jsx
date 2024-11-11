@@ -48,3 +48,27 @@ export default function FilterGroup (){
         </>
     )
 }
+
+
+// import React from "react";
+// import "./style.css";
+
+// export default function FilterGroup() {
+//     return (
+//         <div className="filterGroup">
+//             <h1 className="title">Filtrar por</h1>
+//             <hr />
+//             <div className="filterOption">
+//                 <h3>Marca</h3>
+//                 <ul>
+//                     <li><input type="checkbox" /><label>Adidas</label></li>
+//                     <li><input type="checkbox" /><label>Balenciaga</label></li>
+//                     <li><input type="checkbox" /><label>K-Swiss</label></li>
+//                     <li><input type="checkbox" /><label>Nike</label></li>
+//                     <li><input type="checkbox" /><label>Puma</label></li>
+//                 </ul>
+//             </div>
+//             {/* Adicione outras opções de filtro seguindo o mesmo formato */}
+//         </div>
+//     );
+// }
