@@ -1,22 +1,14 @@
 // CODIGO DO COMPONENTE - SLIDE COM BOLINHAS E THUMBNAILS
 
 import React, { useState } from "react";
-import PropTypes from 'prop-types'; 
 
-import fundo from "../../assets/gallery.png";
 import imgA from "../../assets/home-images/home-slide-1.jpeg";
 import imgB from "../../assets/home-images/home-slide-2.jpeg";
 import imgC from "../../assets/home-images/home-slide-3.jpeg";
-import imgD from "../../assets/home-images/home-slide-4.jpeg";
-import imgE from "../../assets/home-images/home-slide-5.jpeg";
-import imgF from "../../assets/home-images/home-slide-6.jpeg";
-import imgG from "../../assets/home-images/home-slide-7.jpeg";
-import imgH from "../../assets/home-images/home-slide-8.jpeg";
+
 import setaEsquerda from "../../assets/svgs/arrow-left.svg";
 import setaDireita from "../../assets/svgs/arrow-right.svg";
-import cardImg1 from "../../assets/collection-images/collection-1.png";
-import cardImg2 from "../../assets/collection-images/collection-2.png";
-import cardImg3 from "../../assets/collection-images/collection-3.png";
+
 
 import "./style2.css";
 

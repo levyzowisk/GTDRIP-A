@@ -17,10 +17,9 @@
 // }
 
 import ProductListing from "../../components/ProductListing/App";
-import Gallery from "../../components/Gallery/App";
+import Gallery from "../../components/Gallery/app";
 import Layout from "../../components/Layout/App";
 import Section from "../../components/Section/App";
-import ProductCard from "../../components/ProductCard/App";
 import cardImg1 from "../../assets/collection-images/collection-1.png";
 import cardImg2 from "../../assets/collection-images/collection-2.png";
 import cardImg3 from "../../assets/collection-images/collection-3.png";

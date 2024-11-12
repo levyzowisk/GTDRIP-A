@@ -57,7 +57,6 @@
 // }
 
 import React from "react";
-import Gallery from "../Gallery/app2";
 import "./style.css";
 
 export default function BuyBox({

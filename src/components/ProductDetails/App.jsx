@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-import Gallery from "../Gallery/app2";
 
 export default function ProductDetails() {
   return (

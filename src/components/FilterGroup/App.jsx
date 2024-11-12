@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-import ProductListing from "../ProductListing/App";
 
 export default function FilterGroup() {
   return (
