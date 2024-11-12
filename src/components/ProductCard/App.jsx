@@ -9,56 +9,23 @@ export default function ProductCard({
   precoDesconto,
 }) {
   return (
-    <>
-      <article className="article">
-        <figure className="containerImg">
-          <img src={img} alt={nomeProduto} />
-          {descontooff && (
-            <div className="off">
-              <p>{descontooff}</p>
-            </div>
-          )}
-        </figure>
-        <section className="sectionCard">
-          <h4>{title}</h4>
-          <h5>{nomeProduto}</h5>
-          <div className="priceCard">
-            <p className="preco">{preco}</p>
-            {precoDesconto && <p className="precoDesconto">{precoDesconto}</p>}
+    <article className="article">
+      <figure className="containerImg">
+        <img src={img} alt={nomeProduto} />
+        {descontooff && (
+          <div className="off">
+            <p>{descontooff}</p>
           </div>
-        </section>
-      </article>
-    </>
+        )}
+      </figure>
+      <section className="sectionCard">
+        <h4>{title}</h4>
+        <h5>{nomeProduto}</h5>
+        <div className="priceCard">
+          <p className={`preco ${precoDesconto ? 'desconto' : ''}`}>{preco}</p>
+          {precoDesconto && <p className="precoDesconto">{precoDesconto}</p>}
+        </div>
+      </section>
+    </article>
   );
 }
-
-// import "./style.css";
-
-// export default function ProductCard({
-//   img,
-//   descontooff,
-//   nomeProduto,
-//   preco,
-//   precoDesconto,
-// }) {
-//   return (
-//     <article className="article">
-//       <figure className="containerImg">
-//         <img src={img} alt={nomeProduto} />
-//         {descontooff && (
-//           <div className="off">
-//             <p>{descontooff}</p>
-//           </div>
-//         )}
-//       </figure>
-//       <section className="sectionCard">
-//         <h5>{nomeProduto}</h5>
-//         <div className="priceCard">
-//           <p className={`preco ${precoDesconto ? "risco" : ""}`}>{preco}</p>
-//           {precoDesconto && <p className="precoDesconto">{precoDesconto}</p>}
-//         </div>
-//       </section>
-//     </article>
-//   );
-// }
-

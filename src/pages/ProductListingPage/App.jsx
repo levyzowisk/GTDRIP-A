@@ -8,9 +8,7 @@ export default function ProductListingPage() {
   return (
     <Layout>
       <SectionResultados />
-      
-      {/* Contêiner para os filtros e lista de produtos lado a lado */}
-      <div className="product-listing-container">
+      <div className="container">
         <FilterGroup />
         <ProductListing />
       </div>

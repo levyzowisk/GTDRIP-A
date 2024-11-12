@@ -38,6 +38,7 @@ import "./style.css";
 export default function Header() {
   return (
     <header>
+      <div>
       <Busca />
       <nav className="nav">
         <ul>
@@ -63,6 +64,8 @@ export default function Header() {
           </li>
         </ul>
       </nav>
+      </div>
+      
     </header>
   );
 }
