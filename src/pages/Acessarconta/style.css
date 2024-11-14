@@ -1,19 +1,4 @@
-<<<<<<< HEAD
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-/*  */
-
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
 
 .acessar-conta {
   background: linear-gradient(to right, #B5B6F2, #EFEFFF);
@@ -153,5 +138,3 @@ body {
   --cor-light-gray-3: #f5f5f5;
   --cor-white: #ffffff;
 }
-=======
->>>>>>> aeaaf0d98e53aa898c05d07137d41d2e65971c64
