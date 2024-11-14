@@ -13,7 +13,7 @@ export default function ProductViewPage() {
         <div className="product-view-container">
           <GalleryProduct />
           <BuyBox
-            name="Tênis Nike Air Max"
+            name="Tênis Nike Revolution 6 Next Nature Masculino"
             category="Esportivo | Nike | REF:12345"
             stars={4.8}
             reviewCount={200}

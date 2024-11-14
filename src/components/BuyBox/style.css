@@ -112,18 +112,19 @@
   flex-direction: column;
   gap: 15px;
   max-width: 900px;
-  margin: auto;
+  /* margin: auto; */
   padding: 20px;
-  border: 1px solid #ddd;
   border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  
+  border: solid 1px yellow; /* TESTE */
+
 }
 
 .product-title {
-  font-size: 1.2em;
+  font-size: 30px;
   font-weight: bold;
-  color: #333;
+  text-align: top;
+  color: var(--cor-dark-gray-2);
 }
 
 .product-category {
@@ -228,4 +229,15 @@
 .buy-button:focus {
   outline: none;
   border: 2px solid #ffa726;
+}
+
+.star {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  transition: transform 0.2s;
+}
+
+.star:hover {
+  transform: scale(1.2);
 }

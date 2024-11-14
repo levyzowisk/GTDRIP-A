@@ -22,7 +22,7 @@ export default function ProductCard({
         <h4>{title}</h4>
         <h5>{nomeProduto}</h5>
         <div className="priceCard">
-          <p className={`preco ${precoDesconto ? 'desconto' : ''}`}>{preco}</p>
+          <p className={`preco ${precoDesconto ? "desconto" : ""}`}>{preco}</p>
           {precoDesconto && <p className="precoDesconto">{precoDesconto}</p>}
         </div>
       </section>

@@ -9,7 +9,6 @@ import imgC from "../../assets/home-images/home-slide-3.jpeg";
 import setaEsquerda from "../../assets/svgs/arrow-left.svg";
 import setaDireita from "../../assets/svgs/arrow-right.svg";
 
-
 import "./style.css";
 
 const imagensCarrosel = [imgA, imgB, imgC];

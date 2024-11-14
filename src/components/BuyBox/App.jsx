@@ -87,7 +87,10 @@ export default function BuyBox({
         <span className="original-price">{originalPrice}</span>
       </div>
 
-      <p className="product-description">{description}</p>
+      <div>
+        <p>Descrição do produto</p>
+        <p className="product-description">{description}</p>
+      </div>
 
       <div className="size-selection">
         <h4>Tamanho</h4>

@@ -8,6 +8,7 @@
   width: 19.5rem;
   border: 1px solid #ccc;
   padding: 20px;
+  margin-left: 90px;
   
   border: solid 1px yellow; /* TESTE */
 }
@@ -47,5 +48,5 @@
 
 .container {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
