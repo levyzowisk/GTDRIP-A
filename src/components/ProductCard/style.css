@@ -3,8 +3,8 @@
   flex-direction: column;
   width: 292px;
   margin-bottom: 1rem;
-  
-  border: solid 1px yellow; /* TESTE */
+
+
 }
 
 .containerImg {
@@ -12,8 +12,8 @@
   height: 280px;
   margin-bottom: 1rem;
   position: relative;
-  
-  border: solid 1px yellow; /* TESTE */
+
+
 }
 
 .containerImg img {
@@ -23,8 +23,8 @@
   box-shadow: 1px 1px 15px 1px #00000021;
   padding: 0.5rem;
   border-radius: 0.5rem;
-  
-  border: solid 1px yellow; /* TESTE */
+
+
 }
 
 .containerImg .off {
@@ -41,8 +41,6 @@
   justify-content: center;
   text-align: center;
   font-family: "Inter", sans-serif;
-  
-  border: solid 1px yellow; /* TESTE */
 }
 
 .sectionCard h4 {
@@ -51,8 +49,6 @@
   font-weight: 700;
   color: #474747;
   margin-bottom: 0.3rem;
-  
-  border: solid 1px yellow; /* TESTE */
 }
 
 .sectionCard h5 {
@@ -62,15 +58,11 @@
   color: #474747;
   word-spacing: 0.2rem;
   margin-bottom: 1rem;
-  
-  border: solid 1px yellow; /* TESTE */
 }
 
 .priceCard {
   display: flex;
   gap: 1rem;
-  
-  border: solid 1px yellow; /* TESTE */
 }
 
 .preco {
@@ -79,14 +71,10 @@
   font-weight: 400;
   color: #474747;
   text-decoration: line-through;
-  
-  border: solid 1px yellow; /* TESTE */
 }
 
 .preco.desconto {
   color: #cccccc; /* light-gray */
-  
-  border: solid 1px yellow; /* TESTE */
 }
 
 .precoDesconto {
@@ -94,12 +82,8 @@
   font-size: 24px;
   font-weight: 800;
   color: #000000;
-  
-  border: solid 1px yellow; /* TESTE */
 }
 
 .sectionCard p {
   font-family: "Inter", sans-serif;
-  
-  border: solid 1px yellow; /* TESTE */
 }

@@ -10,11 +10,11 @@ import setaEsquerda from "../../assets/svgs/arrow-left.svg";
 import setaDireita from "../../assets/svgs/arrow-right.svg";
 
 
-import "./style2.css";
+import "./style.css";
 
 const imagensCarrosel = [imgA, imgB, imgC];
 
-export default function Gallery() {
+export default function GalleryProduct() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNext = () => {

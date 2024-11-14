@@ -1,6 +1,7 @@
 import ProductListing from "../../components/ProductListing/App";
 import Layout from "../../components/Layout/App";
 import FilterGroup from "../../components/FilterGroup/App";
+import ProdutoLaye from "../../components/ProdutoLaye/App";
 import "./style.css";
 import SectionResultados from "../../components/SectionResultados/App";
 
