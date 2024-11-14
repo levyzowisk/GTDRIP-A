@@ -10,7 +10,12 @@ export default function Cadastro() {
   return (
     <>
       <Layout>
-        
+        <form className="formCampo">
+          
+      <div className="formaCadastro"><h1>Criar Conta</h1>
+          <p>Informações Pessoais</p>
+ 
+    <hr />
         <Input
             htmlFor ="nome"
             text ="Nome completo *"
@@ -39,6 +44,11 @@ export default function Cadastro() {
             type="text"
             placeholder ="Insira seu Celular"
         />
+
+
+     <p>Infomações de Entrega</p>
+    <hr />
+
         <Input
             htmlFor ="endereço"
             text ="Endereço *"
@@ -74,10 +84,19 @@ export default function Cadastro() {
             type="text"
             placeholder ="Insira sua CEP"
         />
-         
-        
+         <div className="checboxForm">
+           <input type="checkbox" />
+           <h5>Quero receber por email ofertas e novidades das lojas da Digital Store. A frequência de envios pode
+            <br />
+            Variar de acordo com a intereção do cliente.
+           </h5>
+         </div>
+          <div className="buttonForm">
+            <button>Criar Conta</button>
+          </div>
+      </div>
 
-☻
+      </form>
       </Layout>
     </>
   );

@@ -2,20 +2,27 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
-    align-items: center;
+    /* align-items: center; */
 }
 
-.input .placeholder {
-    /* padding: 0.8rem;
+/* .input .placeholder {
+    padding: 0.8rem;
     font-size: 1rem;
-    margin-top: 0.5rem  */
-}
+    margin-top: 0.5rem 
+} */
 
 .info{
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
-    align-items: center;
+    
+    /* align-items: center; */
+}
+
+.info label {
+    font-family: "Inter", sans-serif;
+    color:#474747;
+    font-weight: 700;
 }
 
 
