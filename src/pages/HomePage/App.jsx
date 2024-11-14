@@ -2,12 +2,52 @@ import ProductListing from "../../components/ProductListing/App";
 import Gallery from "../../components/Gallery/app";
 import Layout from "../../components/Layout/App";
 import Section from "../../components/Section/App";
+<<<<<<< HEAD
+import cardImg1 from "../../assets/collection-images/collection-1.png";
+import cardImg2 from "../../assets/collection-images/collection-2.png";
+import cardImg3 from "../../assets/collection-images/collection-3.png";
+import Laye from "../../components/Laye/App";
+=======
+>>>>>>> aeaaf0d98e53aa898c05d07137d41d2e65971c64
 import "./style.css";
 import Colecao from "../../components/Colecao/app";
 import ProdutoLaye from "../../components/ProdutoLaye/App";
 
 export default function HomePage() {
   return (
+<<<<<<< HEAD
+    <Layout>
+      {/* Slide de imagens */}
+      <Gallery images={galleryImages} width="1440px" height="681px" />
+
+      {/* Coleções em destaque */}
+      <Section title="Coleções em destaque" titleAlign="center">
+        <div className="collections">
+          <img
+            src={cardImg1}
+            alt="Coleção 1"
+            className="collection-image"
+          />
+          <img
+            src={cardImg2}
+            alt="Coleção 2"
+            className="collection-image"
+          />
+          <img
+            src={cardImg3}
+            alt="Coleção 3"
+            className="collection-image"
+          />
+        </div>
+      </Section>
+
+      {/* Produtos em alta */}
+      <Section title="Produtos em alta" titleAlign="left">
+        <ProductListing products={products} />
+      </Section>
+      <Laye/>
+    </Layout>
+=======
     <>
       <Layout>
         <Gallery></Gallery>
@@ -17,6 +57,7 @@ export default function HomePage() {
         <ProdutoLaye/>
       </Layout>
     </>
+>>>>>>> aeaaf0d98e53aa898c05d07137d41d2e65971c64
   );
 }
 
