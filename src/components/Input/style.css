@@ -25,6 +25,9 @@
     font-weight: 700;
 }
 
-
+.info input {
+    background-color: rgb(234, 234, 234);
+    border: 0;
+}
 
 
