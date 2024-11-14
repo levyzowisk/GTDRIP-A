@@ -23,6 +23,7 @@ import Section from "../../components/Section/App";
 import cardImg1 from "../../assets/collection-images/collection-1.png";
 import cardImg2 from "../../assets/collection-images/collection-2.png";
 import cardImg3 from "../../assets/collection-images/collection-3.png";
+import Laye from "../../components/Laye/App";
 import "./style.css";
 
 export default function HomePage() {
@@ -80,6 +81,7 @@ export default function HomePage() {
       <Section title="Produtos em alta" titleAlign="left">
         <ProductListing products={products} />
       </Section>
+      <Laye/>
     </Layout>
   );
 }
