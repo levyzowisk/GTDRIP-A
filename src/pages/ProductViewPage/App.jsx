@@ -1,5 +1,5 @@
 import ProductListing from "../../components/ProductListing/App";
-import Gallery from "../../components/Gallery/app2";
+import GalleryProduct from "../../components/GalleryProduct/app";
 import Layout from "../../components/Layout/App";
 import Section from "../../components/Section/App";
 import "./style.css";
@@ -11,7 +11,7 @@ export default function ProductViewPage() {
     <>
       <Layout>
         <div className="product-view-container">
-          <Gallery />
+          <GalleryProduct />
           <BuyBox
             name="Tênis Nike Air Max"
             category="Esportivo | Nike | REF:12345"

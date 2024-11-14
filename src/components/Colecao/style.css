@@ -147,55 +147,7 @@
   border-color: #007bff; 
 } */
 
-.gallery {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.gallery-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.gallery-button img {
-  width: 20px;
-  height: 20px;
-}
-
-.gallery-button:first-of-type {
-  left: 10px;
-}
-
-.gallery-button:last-of-type {
-  right: 10px;
-}
-
-.dots {
-  position: absolute;
-  bottom: 40px;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.dot {
-  width: 10px;
-  height: 10px;
-  margin: 0 5px;
-  background-color: #ccc;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.dot.active {
-  background-color: #ff007f;
-}
 
 /* Cards de destaque */
 .cards-destaque {
@@ -215,31 +167,21 @@
 
 .cards-container {
   display: flex;
-  gap: 20px;
+  /* gap: 20px; */
   justify-content: center;
+  /* width: 405px; */
+  height: 251px;
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   padding: 20px;
-  color: white;
-  background-size: cover;
-  background-position: center;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* text-align: center; */
-  position: relative;
-}
-
-.card-tag {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background-color: #d1ff00;
-  color: #000;
-  font-size: 12px;
-  padding: 5px;
+  background-color: var(--cor-white);
   border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .card h3 {
@@ -255,4 +197,64 @@
   border-radius: 5px;
   cursor: pointer;
   font-size: 14px;
+  margin-top: auto; /* Empurra o botão para o final do card */
 }
+
+/* COLEÇÃO DESTAQUE 2 */
+
+/* .card2 {
+
+}
+
+.card-tech2 {
+
+} */
+
+.cards-destaque2 {
+  margin-left: 3.45%;
+
+}
+
+.cards-destaque2 h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: var(--cor-dark-gray-2);
+  justify-content: center;
+  display: flex;
+}
+
+.cards-container2 {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-button {
+  background-color: var(--cor-white);
+  border: none;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.icon-button img {
+  width: 60px;
+  height: 100px;
+}
+
+.icon-button:hover {
+  background-color: var(--cor);
+}
+

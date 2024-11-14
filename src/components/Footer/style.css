@@ -1,54 +1,77 @@
 footer {
-  background-color: #0f0f0f;
+  background-color: var(--cor-dark-gray);
+  color: white;
 }
 
 .footer {
-  background-color: #0f0f0f;
+  background-color: var(--cor-dark-gray);
   color: white;
-  padding: 20px;
+  padding: 70px;
+  padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .footer-logo,
-.footer-links,
+.footer-categories,
 .footer-contact {
   flex: 1;
+  min-width: 200px; 
   margin: 10px;
 }
 
-.footer-logo h2 {
-  margin-bottom: 10px;
+.footer-logo p {
+  font-size: 14px;
+  margin: 10px 0;
 }
 
-.footer-links ul {
+.redesLogo {
+  display: flex;
+  gap: 15px;
+  padding-top: 10px;
+}
+
+.footer-categories ul {
   list-style: none;
   padding: 0;
+  margin-top: 5px;
 }
 
-.footer-links ul li a {
+.footer-categories ul li {
+  color: #e0e0e0;
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+.footer-categories ul li a {
   color: white;
   text-decoration: none;
 }
 
 .footer-contact p {
-  margin: 5px 0;
-}
-
-.redesLogo {
-  display: flex;
-  gap: 30px;
-  padding-top: 20px;
-}
-
-.footer-social a {
-  color: white;
-  font-size: 24px;
-  text-decoration: none;
+  font-size: 14px;
+  margin: 20px 0;
 }
 
 .digcoll {
   text-align: center;
   color: white;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.digcoll hr {
+  border: 0;
+  border-top: 1px solid white;
+  margin: 20px 0;
+}
+
+.digcoll p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.footer-categories {
+  margin-left: 100px;
 }

@@ -1,72 +1,69 @@
-import footerLogo from "../../assets/svgs/logo.svg";
+import Logo from "../Logofooter/App";
+import Information from "../Information/App";
 import facebookLogo from "../../assets/svgs/facebook.svg";
 import instagramLogo from "../../assets/svgs/instagram.svg";
 import twitterLogo from "../../assets/svgs/twitter.svg";
-
 import "./style.css";
+
+const informations = [
+  { text: "Sobre Drip Store", link: "/about" },
+  { text: "Segurança", link: "/security" },
+  { text: "Wishlist", link: "/wishlist" },
+  { text: "Blog", link: "/blog" },
+  { text: "Trabalhe conosco", link: "/work" },
+  { text: "Meus Pedidos", link: "/orders" },
+];
+
+const categories = ["Camisetas", "Calças", "Bonés", "Headphones", "Tênis"];
 
 export default function Footer() {
   return (
-    <footer>
-      <footer className="footer">
-        <div className="footer-logo">
-          <h2>
-            <img src={footerLogo} alt="Logo Digital Store" />
-          </h2>
-          <p></p>
-          <div className="redesLogo">
+    <footer className="footer">
+      <div className="footer-logo">
+        <Logo />
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        <div className="redesLogo">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
             <img src={facebookLogo} alt="Logo Facebook" />
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
             <img src={instagramLogo} alt="Logo Instagram" />
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
             <img src={twitterLogo} alt="Logo Twitter" />
-          </div>
+          </a>
         </div>
+      </div>
 
-        <div className="footer-links">
-          <h3>Informação</h3>
-          <ul>
-            <li>
-              <a href="#">Sobre Drip Store</a>
+      <div className="footer-categories">
+        <h3>Informações</h3>
+        <ul>
+          {informations.map((info, index) => (
+            <li key={index}>
+              <a href={info.link}>{info.text}</a>
             </li>
-            <li>
-              <a href="#">Trabalhe conosco</a>
-            </li>
-            <li>
-              <a href="#">Meus Pedidos</a>
-            </li>
-          </ul>
-        </div>
-        <div className="footer-links">
-          <h3>Categorias</h3>
-          <ul>
-            <li>
-              <a href="#">Camisetas</a>
-            </li>
-            <li>
-              <a href="#">Calças</a>
-            </li>
-            <li>
-              <a href="#">Bonés</a>
-            </li>
-            <li>
-              <a href="#">Headphones</a>
-            </li>
-            <li>
-              <a href="#">Tênis</a>
-            </li>
-          </ul>
-        </div>
-        <div className="footer-contact">
-          <h3>Contato</h3>
-          <p>
-            Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - CE,
-            60150-161
-          </p>
-          <p>(85) 3051-3411</p>
-        </div>
-      </footer>
+          ))}
+        </ul>
+      </div>
+
+      <div className="footer-categories">
+        <h3>Categorias</h3>
+        <ul>
+          {categories.map((category, index) => (
+            <li key={index}>{category}</li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="footer-contact">
+        <h3>Contato</h3>
+        <p>Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - CE, 60150-161</p>
+        <p>(85) 3051-3411</p>
+      </div>
+
       <div className="digcoll">
         <hr />
-        <p>@ 2022 Digital College</p>
+        <p>© 2024 Digital Store</p>
       </div>
     </footer>
   );
