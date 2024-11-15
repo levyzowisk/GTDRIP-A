@@ -43,7 +43,7 @@ export default function Header() {
         <nav className="nav">
           <ul>
             <li>
-              <NavLink to="/" activeClassName="active">
+            <NavLink to="/" activeClassName="active">
                 Home
               </NavLink>
             </li>
