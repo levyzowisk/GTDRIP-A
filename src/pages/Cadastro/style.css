@@ -38,27 +38,37 @@ body {
 
 }
 
-.fromCampo h1{
+.formCampo h1{
  color:#1F1F1F;
+ margin-bottom: 40px;
 }
 
 .formCampo p {
-  margin: 22px;;
+  /* margin: 22px; */
   font-family: "Inter", sans-serif;
   color: #474747;
+  font-weight: 700;
+  margin-bottom: 40px;
+  
   
 }
 
 
 .formCampo hr {
-  margin: 20px;
+  /* margin: 20px; */
+  /* display: flex; */
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+ color: #CCCCCC;
+
 }
 
 
 .formCampo{
   display: flex;
     flex-direction: column;
-    margin-bottom: 40px;
+    margin-bottom: 40px;;
     align-items: center;
    
 }
@@ -73,6 +83,8 @@ body {
   height: 22px;
   accent-color: #c92071;
   margin-right: 5px;
+  border: 1px;
+  border-radius: 2px;
 }
 
 .checboxForm {
@@ -82,6 +94,12 @@ body {
   /* align-items: center; */
   font-family: "Inter", sans-serif;
   color: #474747;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 500px;
+  line-height: 22px;
+  letter-spacing: 0.22px;
+
  
 }
 

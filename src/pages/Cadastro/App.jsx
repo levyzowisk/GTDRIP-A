@@ -21,14 +21,14 @@ export default function Cadastro() {
             text ="Nome completo *"
             id = "nome"
             type="text"
-            placeholder ="Insira seu Nome"
+            placeholder ="Insira seu nome"
         />
         <Input
             htmlFor ="email"
             text ="E-mail *"
             id = "email"
             type="text"
-            placeholder ="Insira seu E-MAIL"
+            placeholder ="Insira seu e-mail"
         />
         <Input
             htmlFor ="cpf"
@@ -42,7 +42,7 @@ export default function Cadastro() {
             text ="Celular *"
             id = "celular"
             type="text"
-            placeholder ="Insira seu Celular"
+            placeholder ="Insira seu celular"
         />
 
 
@@ -54,21 +54,21 @@ export default function Cadastro() {
             text ="Endereço *"
             id = "endereço"
             type="text"
-            placeholder ="Insira seu Endereço"
+            placeholder ="Insira seu endereço"
         />
         <Input
             htmlFor ="bairro"
             text ="Bairro *"
             id = "bairro"
             type="text"
-            placeholder ="Insira seu Bairro"
+            placeholder ="Insira seu bairro"
         />
          <Input
             htmlFor ="cidade"
             text ="Cidade *"
             id = "cidade"
             type="text"
-            placeholder ="Insira sua Cidade"
+            placeholder ="Insira sua cidade"
         />
          <Input
             htmlFor ="Cep"
@@ -82,7 +82,7 @@ export default function Cadastro() {
             text ="Complemento *"
             id = "complemento"
             type="text"
-            placeholder ="Insira sua CEP"
+            placeholder ="Insira sua complemento"
         />
          <div className="checboxForm">
            <input type="checkbox" />

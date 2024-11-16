@@ -1,3 +1,5 @@
+
+
 .campo{
     display: flex;
     flex-direction: column;
@@ -15,7 +17,6 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
-    
     /* align-items: center; */
 }
 
@@ -26,8 +27,10 @@
 }
 
 .info input {
-    background-color: rgb(234, 234, 234);
+    background-color: rgba(219, 219, 219, 0.411);
     border: 0;
+    border-radius: 8px;
+    padding: 16px;
 }
 
 
