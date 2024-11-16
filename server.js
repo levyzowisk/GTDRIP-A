@@ -9,8 +9,16 @@ const porta = 3000;
 app.use(json());
 
 
-app.get('/', (req, res)=> {
-    res.send("Hello World, express!!");
+app.get('/', async (req, res)=> {
+    const created = await prisma.users.create(
+        {
+            data:{
+                email: "arthur@gmail.com",
+                nome: "arthur"
+            }
+        }
+    )
+    res.send(created);
 });
 
 app.listen(porta, () => {
