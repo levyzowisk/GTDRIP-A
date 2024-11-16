@@ -9,6 +9,7 @@ export default function Carrinho() {
       <Layout>
         <Section title="Produtos relacionados">
           <ProductListing />
+
         </Section>
       </Layout>
     </>

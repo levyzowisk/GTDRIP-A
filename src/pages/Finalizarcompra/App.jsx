@@ -6,12 +6,14 @@ import "./style.css";
 
 
 export default function Finalizarcompra() {
+  
   return (
     <>
       <Layout>
-        <Gallery></Gallery>
-        <Section/>
-        <ProductListing/>
+        {/* <Gallery></Gallery> */}
+    
+        {/* <Section/> */}
+        {/* <ProductListing/> */}
       </Layout>
     </>
   );
