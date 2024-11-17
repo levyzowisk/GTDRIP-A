@@ -1,18 +1,22 @@
-
 .productListing {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Limite de quatro colunas */
-    gap: 16px; /* Adicionado ponto e vírgula no final */
-    margin-left: 3.45%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Limite de quatro colunas */
+  gap: 16px; /* Adicionado ponto e vírgula no final */
+  margin-left: 3.45%;
 }
 
 .article {
-    padding: 16px; /* Adicionado padding para melhorar o espaçamento interno */
-    border-radius: 4px; /* Adicionado border-radius para cantos arredondados */
+  padding: 16px; /* Adicionado padding para melhorar o espaçamento interno */
+  border-radius: 4px; /* Adicionado border-radius para cantos arredondados */
 }
 
 .product-listing {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 16px;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.productListing {
+  display: grid;
+  gap: 16px;
+}

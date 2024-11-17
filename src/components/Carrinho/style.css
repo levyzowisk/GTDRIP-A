@@ -1,0 +1,149 @@
+/* Geral */
+.cart-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+/* Coluna esquerda */
+.cart-left {
+  flex: 2;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-left h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.item-details h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.item-details p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.item-quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-btn {
+  background-color: #ccc;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.quantity-btn:disabled {
+  background-color: #eee;
+  cursor: not-allowed;
+}
+
+.remove-item {
+  color: #c92071;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.item-pricing {
+  text-align: right;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #bbb;
+  font-size: 14px;
+}
+
+.new-price {
+  color: #c92071;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.discount-shipping {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.discount-shipping input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.pink-button {
+  background-color: #c92071;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Coluna direita */
+.cart-right {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-right h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.cart-right p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.cart-right h2 {
+  font-size: 24px;
+  color: #c92071;
+}
+
+.yellow-button {
+  background-color: #ffc107;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}

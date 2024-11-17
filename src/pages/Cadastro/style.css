@@ -1,46 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-/*  */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-}
-
-:root {
-  /* Escala de cores coloridas */
-  --cor-primary: #c92071;
-  --cor-secondary: #b5b6f2;
-  --cor-tertiary: #991956;
-  --cor-error: #ee4266;
-  --cor-sucess: #52ca76;
-  --cor-warning: #f6aa1c;
-  /* Escala de cinza */
-  --cor-dark-gray: #1f1f1f;
-  --cor-dark-gray-2: #474747;
-  --cor-dark-gray-3: #666666;
-  --cor-light-gray: #8f8f8f;
-  --cor-light-gray-2: #cccccc;
-  --cor-light-gray-3: #f5f5f5;
-  --cor-white: #ffffff;
-}
-
-.formCampo Input{
+.formCampo Input {
   padding: 0.8rem;
   font-size: 1rem;
-  margin-top: 0.5rem 
-
+  margin-top: 0.5rem;
 }
 
-.formCampo h1{
- color:#1F1F1F;
- margin-bottom: 40px;
+.formCampo h1 {
+  color: #1f1f1f;
+  margin-bottom: 40px;
 }
 
 .formCampo p {
@@ -49,10 +17,7 @@ body {
   color: #474747;
   font-weight: 700;
   margin-bottom: 40px;
-  
-  
 }
-
 
 .formCampo hr {
   /* margin: 20px; */
@@ -60,17 +25,14 @@ body {
   align-items: center;
   flex-direction: column;
   margin-bottom: 40px;
- color: #CCCCCC;
-
+  color: #cccccc;
 }
 
-
-.formCampo{
+.formCampo {
   display: flex;
-    flex-direction: column;
-    margin-bottom: 40px;;
-    align-items: center;
-   
+  flex-direction: column;
+  margin-bottom: 40px;
+  align-items: center;
 }
 
 .formaCadastro h1 {
@@ -78,7 +40,7 @@ body {
   flex-direction: column;
 }
 
-.checboxForm input[type="checkbox"]{
+.checboxForm input[type="checkbox"] {
   width: 22px;
   height: 22px;
   accent-color: #c92071;
@@ -99,18 +61,31 @@ body {
   font-weight: 500px;
   line-height: 22px;
   letter-spacing: 0.22px;
-
- 
 }
 
 .buttonForm button {
- width:750px;
- height: 48px;
- border-radius: 8px;
- border: 0;
- outline: 0;
- background-color: #c92071;
- font-family: "Inter", sans-serif;
- color:#f5f5f5;
+  width: 750px;
+  height: 48px;
+  border-radius: 8px;
+  border: 0;
+  outline: 0;
+  background-color: #c92071;
+  font-family: "Inter", sans-serif;
+  color: #f5f5f5;
 }
 
+
+.buttonForm button:hover {
+  background-color: #ff4d8a;
+  cursor: pointer;
+}
+
+.margin-cadastro {
+  margin-top: 60px;
+  background-color: #F9F8FE;
+  ;
+}
+
+.top-cadastro {
+  margin-top: 40px;
+}

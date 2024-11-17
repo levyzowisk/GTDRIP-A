@@ -1,16 +1,20 @@
 .titulo {
   margin-bottom: 20px;
-  font-family: "Inter", sans-serif;
   color: #474747;
+  font-size: 24px;
 }
+
 
 .filterGrupo {
   width: 19.5rem;
+  height: 100%;
   border: 1px solid #ccc;
   padding: 20px;
   margin-left: 90px;
-  
-  border: solid 1px yellow; /* TESTE */
+}
+
+.filterGrupo h3 {
+  font-size: 16px;
 }
 
 .filterGrupo hr {
@@ -18,14 +22,12 @@
 }
 
 .filterGrupo h3 {
-  font-family: "Inter", sans-serif;
   margin-bottom: 20px;
   color: #474747;
 }
 
 .filterGrupo ul {
   list-style: none;
-  font-family: "Inter", sans-serif;
   color: #474747;
 }
 
@@ -34,7 +36,6 @@
   margin-bottom: 20px;
   display: flex;
   align-items: center;
-  font-family: "Inter", sans-serif;
   color: #474747;
 }
 

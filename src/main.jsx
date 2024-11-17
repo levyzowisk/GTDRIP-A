@@ -47,7 +47,7 @@ import ProductViewPage from "./pages/ProductViewPage/App.jsx";
 import NotFoundPage from "./components/NotFoundPage/App.jsx";
 import Acessarconta from "./pages/Acessarconta/App.jsx";
 import Cadastro from "./pages/Cadastro/App.jsx";
-import Carrinho from "./pages/Carrinho/App.jsx";
+import Carrinhopage from "./pages/Carrinhopage/App.jsx";
 import Comprafinalizada from "./pages/Comprafinalizada/App.jsx";
 import Criarconta from "./pages/Criarconta/App.jsx";
 import Finalizarcompra from "./pages/Finalizarcompra/App.jsx";
@@ -62,7 +62,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/products/:id" element={<ProductViewPage />} />
         <Route path="/acessarconta" element={<Acessarconta/>} />
         <Route path="/cadastro" element={<Cadastro/>} />
-        <Route path="/carrinho" element={<Carrinho />} />
+        <Route path="/carrinho" element={<Carrinhopage />} />
         <Route path="/comprafinalizada" element={<Comprafinalizada />} />
         <Route path="/criarconta" element={<Criarconta />} />
         <Route path="/finalizarcompra" element={<Finalizarcompra />} />

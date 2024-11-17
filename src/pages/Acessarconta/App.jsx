@@ -15,7 +15,7 @@ export default function Acessarconta() {
           <form className="form">
             <h1>Acesse sua conta</h1>
             <p>
-              Novo cliente? Então registre-se <a href="/register">aqui</a>.
+              Novo cliente? Então registre-se <a href="/cadastro">aqui</a>.
             </p>
             <label htmlFor="login">Login *</label>
             <input
@@ -39,7 +39,11 @@ export default function Acessarconta() {
             <button>Acessar a Conta</button>
             <div className="login-rede-sociais">
               <span>Ou faça login com</span>
-              <img src={Facebook} alt="Icone Facebook" className="social-icon" />
+              <img
+                src={Facebook}
+                alt="Icone Facebook"
+                className="social-icon"
+              />
               <img src={Gmail} alt="Icone Gmail" className="social-icon" />
             </div>
           </form>
@@ -48,8 +52,6 @@ export default function Acessarconta() {
           <img src={ImgCad} alt="Imagem Página de Cadastro" />
         </div>
       </section>
-
-      {/* <Layout /> */}
     </>
   );
 }

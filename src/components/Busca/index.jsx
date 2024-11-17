@@ -1,10 +1,16 @@
-// import React from "react";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import carrinho from "../../assets/carrinho.png";
 import Logo from "../Logo/App";
-
 import "./style.css";
 
 export default function Busca() {
+  const navigate = useNavigate();
+
+  const handleCartClick = () => {
+    navigate("/carrinho");
+  };
+
   return (
     <>
       <div className="bar">
@@ -26,7 +32,12 @@ export default function Busca() {
           </a>
         </div>
 
-        <img src={carrinho} alt="" />
+        <img
+          src={carrinho}
+          alt="Carrinho de Compras"
+          className="cart-icon"
+          onClick={handleCartClick}
+        />
       </div>
     </>
   );

@@ -1,21 +1,13 @@
 import React, { useState } from "react";
 import "./style.css";
 
-export default function ProductOptions({
-  options,
-  radius,
-  shape,
-  type,
-}) {
-  // Estado para armazenar a opção selecionada
+export default function ProductOptions({ options, radius, shape, type }) {
   const [selectedOption, setSelectedOption] = useState(null);
 
-  // Função para lidar com a seleção de uma opção
   const handleSelect = (option) => {
     setSelectedOption(option);
   };
 
-  // Estilos dinâmicos com base nas propriedades
   const getOptionStyle = (option) => {
     const isSelected = option === selectedOption;
     const baseStyle = {
