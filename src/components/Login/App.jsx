@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 
-const Login = () => {
+export default function Login() {
   return (
     <div className="login-container">
       <div className="login-box">
@@ -22,6 +22,4 @@ const Login = () => {
       </div>
     </div>
   );
-};
-
-export default Login;
+}

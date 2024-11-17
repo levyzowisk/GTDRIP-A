@@ -58,14 +58,14 @@ createRoot(document.getElementById("root")).render(
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/products" element={<ProductListingPage />} />
-        <Route path="/products/:id" element={<ProductViewPage />} />
+        <Route path="/produtos" element={<ProductListingPage />} />
+        <Route path="/produto/detalhes" element={<ProductViewPage />} />
         <Route path="/acessarconta" element={<Acessarconta/>} />
         <Route path="/cadastro" element={<Cadastro/>} />
         <Route path="/carrinho" element={<Carrinhopage />} />
         <Route path="/comprafinalizada" element={<Comprafinalizada />} />
         <Route path="/criarconta" element={<Criarconta />} />
-        <Route path="/oi" element={<Finalizarcompra />} />
+        <Route path="/finalizarcompra" element={<Finalizarcompra />} />
         <Route path="/meuspedidos" element={<Meuspedidos />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

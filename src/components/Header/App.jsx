@@ -48,7 +48,7 @@ export default function Header() {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/products" activeClassName="active">
+              <NavLink to="/produtos" activeClassName="active">
                 Produtos
               </NavLink>
             </li>

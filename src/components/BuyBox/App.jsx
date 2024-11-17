@@ -57,7 +57,9 @@ export default function BuyBox({
             src={StarDesactive}
             alt="star"
             className="star-icon"
-            onClick={() => handleStarClick(filledStars + (halfStar ? 1 : 0) + index)}
+            onClick={() =>
+              handleStarClick(filledStars + (halfStar ? 1 : 0) + index)
+            }
           />
         ))}
       </>
@@ -71,7 +73,8 @@ export default function BuyBox({
 
       <div className="rating">
         <span className="stars">
-          {renderStars(selectedStars)} <img src={StarWhite} alt="star" className="star-icon" />
+          {renderStars(selectedStars)}{" "}
+          <img src={StarWhite} alt="star" className="star-icon" />
         </span>
         <span className="rating-value">{selectedStars}</span>
         <span className="review-count">({rating} avaliações)</span>
@@ -87,7 +90,7 @@ export default function BuyBox({
           <span className="current-price">{price}</span>
         )}
       </div>
-
+      <p>Descrição do produto</p>
       <p className="product-description">{description}</p>
 
       {children}

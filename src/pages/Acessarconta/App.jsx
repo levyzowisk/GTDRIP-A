@@ -1,10 +1,8 @@
-// import ProductListing from "../../components/ProductListing/App";
-// import Gallery from "../../components/Gallery/app";
-// import Section from "../../components/Section/App";
-// import Layout from "../../components/Layout/App";
+
 import Facebook from "../../assets/svgs/facebook-circle.svg";
 import Gmail from "../../assets/svgs/gmail.svg";
 import ImgCad from "../../assets/svgs/imgcad.svg";
+import Footer from "../../components/Footer/App";
 import "./style.css";
 
 export default function Acessarconta() {
@@ -52,6 +50,7 @@ export default function Acessarconta() {
           <img src={ImgCad} alt="Imagem Página de Cadastro" />
         </div>
       </section>
+      <Footer />
     </>
   );
 }

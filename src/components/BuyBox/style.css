@@ -1,12 +1,11 @@
 .product-details {
-  font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
   gap: 15px;
   max-width: 900px;
   padding: 20px;
   border-radius: 8px;
-  border: solid 1px var(--cor-light-gray-2);
+  /* border: solid 1px var(--cor-light-gray-2); */
 }
 
 .product-title {

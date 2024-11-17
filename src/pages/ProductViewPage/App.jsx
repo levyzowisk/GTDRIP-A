@@ -3,12 +3,13 @@ import ProductListing from "../../components/ProductListing/App";
 import GalleryProduct from "../../components/GalleryProduct/app";
 import Layout from "../../components/Layout/App";
 import Section from "../../components/Section/App";
-import "./style.css";
 import BuyBox from "../../components/BuyBox/App";
 import ProductOptions from "../../components/ProductOptions/App";
 import img from "../../assets/tenis.png";
 
-const products = [...Array(8)].map((_, index) => ({
+import "./style.css";
+
+const products = [...Array(4)].map((_, index) => ({
   img: img,
   descontooff: "30% OFF",
   title: "Tênis",
@@ -31,7 +32,7 @@ export default function ProductViewPage() {
           priceDiscount="R$ 249,99"
           description="Tênis confortável para a prática de esportes."
         >
-          <ProductOptions
+          <ProductOptions 
             options={["37", "38", "39", "40", "41"]}
             radius="5px"
             shape="square"

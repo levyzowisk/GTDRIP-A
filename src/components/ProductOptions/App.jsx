@@ -21,11 +21,11 @@ export default function ProductOptions({ options, radius, shape, type }) {
     if (shape === "square") {
       return {
         ...baseStyle,
-        width: "46px",
-        height: "46px",
+        width: "36px",
+        height: "36px",
         borderRadius: radius || "5px",
         backgroundColor: type === "color" ? option : "transparent",
-        fontSize: type === "text" ? "24px" : "initial",
+        fontSize: type === "text" ? "16px" : "initial",
         color: type === "text" ? "var(--cor-dark-gray-2)" : "transparent",
         border: isSelected ? "2px solid var(--cor-primary)" : baseStyle.border,
       };
@@ -36,7 +36,7 @@ export default function ProductOptions({ options, radius, shape, type }) {
         height: "31px",
         borderRadius: "50%",
         backgroundColor: type === "color" ? option : "transparent",
-        fontSize: type === "text" ? "24px" : "initial",
+        fontSize: type === "text" ? "16px" : "initial",
         color: type === "text" ? "var(--cor-dark-gray-2)" : "transparent",
         border: isSelected ? "2px solid var(--cor-primary)" : baseStyle.border,
       };
@@ -44,17 +44,20 @@ export default function ProductOptions({ options, radius, shape, type }) {
   };
 
   return (
-    <div className="product-options">
-      {options.map((option, index) => (
-        <div
-          key={index}
-          className="option-item"
-          style={getOptionStyle(option)}
-          onClick={() => handleSelect(option)}
-        >
-          {type === "text" ? option : ""}
-        </div>
-      ))}
-    </div>
+    <>
+    <p className="tamanhop">Tamanho</p>
+      <div className="product-options">
+        {options.map((option, index) => (
+          <div
+            key={index}
+            className="option-item"
+            style={getOptionStyle(option)}
+            onClick={() => handleSelect(option)}
+          >
+            {type === "text" ? option : ""}
+          </div>
+        ))}
+      </div>
+    </>
   );
 }

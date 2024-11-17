@@ -13,31 +13,33 @@ export default function Busca() {
 
   return (
     <>
-      <div className="bar">
-        <Logo />
-        {/* Campo de busca */}
-        <input
-          type="text"
-          placeholder="Pesquisar produto..."
-          className="search-bar"
-        />
+      <div className="margin">
+        <div className="bar">
+          <Logo />
+          {/* Campo de busca */}
+          <input
+            type="text"
+            placeholder="Pesquisar produto..."
+            className="search-bar"
+          />
 
-        {/* Botões de Cadastro e Entrar */}
-        <div className="auth-links">
-          <a href="/cadastro" className="cadastro">
-            Cadastre-se
-          </a>
-          <a href="/acessarconta" className="button-primary">
-            Entrar
-          </a>
+          {/* Botões de Cadastro e Entrar */}
+          <div className="auth-links">
+            <a href="/cadastro" className="cadastro">
+              Cadastre-se
+            </a>
+            <a href="/acessarconta" className="button-primary">
+              Entrar
+            </a>
+          </div>
+
+          <img
+            src={carrinho}
+            alt="Carrinho de Compras"
+            className="cart-icon"
+            onClick={handleCartClick}
+          />
         </div>
-
-        <img
-          src={carrinho}
-          alt="Carrinho de Compras"
-          className="cart-icon"
-          onClick={handleCartClick}
-        />
       </div>
     </>
   );

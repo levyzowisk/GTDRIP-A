@@ -1,11 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import img from "../../assets/tenis.png";
 import "./style.css";
 
 export default function Carrinho() {
+  const navigate = useNavigate();
+
   const cartItems = [
     {
-      img: img, 
+      img: img, // URL DA IMAGEM
       title: "Tênis Nike Revolution 6 Next Nature Masculino",
       color: "Vermelho / Branco",
       size: 42,
@@ -14,6 +17,10 @@ export default function Carrinho() {
       quantity: 1,
     },
   ];
+
+  const handleContinueClick = () => {
+    navigate("/cadastro");
+  };
 
   return (
     <div className="cart-container">
@@ -60,7 +67,9 @@ export default function Carrinho() {
         <p>Frete: R$ 0,00</p>
         <p>Desconto: R$ 30,00</p>
         <h2>Total: R$ 189,00</h2>
-        <button className="yellow-button">Continuar</button>
+        <button className="yellow-button" onClick={handleContinueClick}>
+          Continuar
+        </button>
       </div>
     </div>
   );
