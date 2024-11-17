@@ -40,7 +40,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import "../style.css";
 import HomePage from "./pages/HomePage/App.jsx";
 import ProductListingPage from "./pages/ProductListingPage/App.jsx";
 import ProductViewPage from "./pages/ProductViewPage/App.jsx";
