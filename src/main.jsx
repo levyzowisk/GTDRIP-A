@@ -65,7 +65,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/carrinho" element={<Carrinhopage />} />
         <Route path="/comprafinalizada" element={<Comprafinalizada />} />
         <Route path="/criarconta" element={<Criarconta />} />
-        <Route path="/finalizarcompra" element={<Finalizarcompra />} />
+        <Route path="/oi" element={<Finalizarcompra />} />
         <Route path="/meuspedidos" element={<Meuspedidos />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
