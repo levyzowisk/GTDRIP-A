@@ -97,9 +97,10 @@ import Section from "../../components/Section/App";
 import Colecao from "../../components/Colecao/app";
 import ProdutoLaye from "../../components/ProdutoLaye/App";
 import img from "../../assets/tenis.png";
+import { useState, useEffect } from "react";
 import "./style.css";
 
-const products = [...Array(8)].map((_, index) => ({
+const products1 = [...Array(8)].map((_, index) => ({
   img: img,
   descontooff: "30% OFF",
   title: "Tênis",
@@ -109,6 +110,27 @@ const products = [...Array(8)].map((_, index) => ({
 }));
 
 export default function HomePage() {
+
+      const [products, setProducts] = useState([])
+      useEffect(() => {
+        fetch("http://localhost:3000/api/product/all")
+        .then(response => response.json())
+        .then((data) => {
+
+          setProducts(data)
+          // console.log(products);
+          
+          // console.log(data);
+          
+        })
+      }, [])
+
+      // useEffect(() => {
+      //   // console.log(products); // Só é executado quando `products` for atualizado
+      // }, [products]);
+
+  // console.log(products);
+  
   return (
     <Layout>
       <Gallery />

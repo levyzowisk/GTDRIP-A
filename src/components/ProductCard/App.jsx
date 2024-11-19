@@ -14,7 +14,7 @@ export default function ProductCard({
         <img src={img} alt={nomeProduto} />
         {descontooff && (
           <div className="off">
-            <p>{descontooff}</p>
+            <p>{descontooff}%OFF</p>
           </div>
         )}
       </figure>

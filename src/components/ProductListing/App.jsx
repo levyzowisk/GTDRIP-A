@@ -34,25 +34,52 @@ import "./style.css";
 import ProductCard from "../../components/ProductCard/App";
 
 export default function ProductListing({ products, columns, rows }) {
+    console.log(products);
+    
   return (
-    <div
-      className="productListing"
-      style={{
-        gridTemplateColumns: `repeat(${columns}, 1fr)`,
-        gridTemplateRows: `repeat(${rows}, auto)`,
-      }}
-    >
-      {products.map((product, index) => (
-        <ProductCard
-          key={index}
-          img={product.img}
-          descontooff={product.descontooff}
-          title={product.title}
-          nomeProduto={product.nomeproduto}
-          preco={product.preco}
-          precoDesconto={product.precodesconto}
-        />
-      ))}
-    </div>
+   
+
+       <div
+       className="productListing"
+       style={{
+         gridTemplateColumns: `repeat(${columns}, 1fr)`,
+         gridTemplateRows: `repeat(${rows}, auto)`,
+       }}
+     >
+        {products.map((product, index) => (
+            <ProductCard
+           key={index}
+           img={product.img.path}
+           descontooff={product.desconto_off}
+           title={product.nome}
+           nomeProduto={product.slug}
+           preco={product.preco}
+           precoDesconto={product.preco_desconto}
+            />
+
+
+        ))}
+      </div>  
+
+
+    // <div
+    //   className="productListing"
+    //   style={{
+    //     gridTemplateColumns: `repeat(${columns}, 1fr)`,
+    //     gridTemplateRows: `repeat(${rows}, auto)`,
+    //   }}
+    // >
+    //   {products.map((product, index) => (
+    //     <ProductCard
+    //       key={index}
+    //       img={product.img.path}
+    //       descontooff={product.descontooff}
+    //       title={product.title}
+    //       nomeProduto={product.nomeproduto}
+    //       preco={product.preco}
+    //       precoDesconto={product.precodesconto}
+    //     />
+    //   ))}
+    // </div>
   );
 }
