@@ -11,7 +11,7 @@ generator client {
 datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
-  shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
+  // shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
 }
 
 model Users{
@@ -39,9 +39,11 @@ model Produtos{
   descricao String
   preco Float 
   preco_desconto Float
+  desconto_off Float @default(30)
   img ProdutosImg?
   catprod CatProd?
 }
+
 
 model ProdutosImg{
   id Int @id @default(autoincrement())
