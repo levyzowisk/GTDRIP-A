@@ -1,6 +1,9 @@
 import express, { json } from "express";
 import route from "./src/route/Route.js";
-import cors from "cors"
+import cors from "cors";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const app = express();
 const porta = 3000;
