@@ -6,9 +6,7 @@ const route =  express.Router();
 
 route.get("/product/all", ProductController.getAll);
 route.post("/user/register", UserController.create);
-route.get("/oi", () => {
-    console.log("oi");
-})
+route.post("/user/login", UserController.getUnique);
 
 
 

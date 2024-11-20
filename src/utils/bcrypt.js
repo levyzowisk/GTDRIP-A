@@ -6,4 +6,8 @@ const cryptPassword = (password) => {
    return bcrypt.hashSync(password, SALTS)
 }
 
+export const validatePassword = (password, passwordHash) => {   
+   return bcrypt.compareSync(password, passwordHash);
+}
+
 export default cryptPassword;

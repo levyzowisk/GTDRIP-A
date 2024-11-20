@@ -16,7 +16,7 @@ class UserRepository {
             return createResult;
         }
         catch(error) {
-            return error;
+            throw error;
         }
     //    return await prisma.users.create() 
     }
@@ -29,6 +29,23 @@ class UserRepository {
 
         catch(error) {
             return error;
+        }
+    }
+
+    // getUnique - findInuque
+    async getUnique(body) {
+        try {
+            const data = await prisma.users.findUnique({
+                where: {
+                    email: body.email
+                }
+            })
+            return data;
+        }
+
+        catch(error) {
+            // Verificar se esse error, dessa forma pode ser capturado no controller;
+            throw error;
         }
     }
 
