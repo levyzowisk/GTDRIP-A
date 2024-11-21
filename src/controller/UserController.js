@@ -1,5 +1,7 @@
 import UserRepository from "../repository/UserRepository.js";
 import { validatePassword } from "../utils/bcrypt.js";
+import generateToken from "../utils/jwt.js";
+
 class UserController {
     async create(request, response) {
         try {
@@ -33,7 +35,10 @@ class UserController {
                 return response.status(404).json("Senha invalida")
              }
 
-             return response.status(200).json("Login Efetuado com sucesso!");
+             const token = generateToken(request.body.email)
+             console.log(token);
+             
+             return response.status(200).json({token: token, message: "Login efetuado e token gerado!"});
 
         }
         catch(error) {
