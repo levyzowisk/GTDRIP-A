@@ -11,6 +11,10 @@ const generateToken  = (email) => {
  SECRET, {expiresIn: '1h'}
 )}
 
+export const verifyToken = (token) => {
+    return jwt.verify(token, SECRET);
+}
+
 export default generateToken;
 
 // const loginUser = (email: string): string => {
